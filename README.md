@@ -1,8 +1,6 @@
 Alunos: Abraão Silva e Liah Renata Colins da Silva
 Os dois paradigmas têm formas diferentes de pensar e organizar um programa.
 
-Aqui está o material estruturado em formato de **relatório técnico / documentação de trabalho** (pronto para copiar e colar num documento Word, PDF ou README do GitHub), acompanhado do **diagrama de classes** que representa a arquitetura do sistema.
-
 ---
 
 # Documentação do Projeto: Sistema Académico em Orientação a Objetos
