@@ -1,7 +1,11 @@
-# prova2
-
 Alunos: Abraão Silva e Liah Renata Colins da Silva
 Os dois paradigmas têm formas diferentes de pensar e organizar um programa.
+
+Aqui está o material estruturado em formato de **relatório técnico / documentação de trabalho** (pronto para copiar e colar num documento Word, PDF ou README do GitHub), acompanhado do **diagrama de classes** que representa a arquitetura do sistema.
+
+---
+
+# Documentação do Projeto: Sistema Académico em Orientação a Objetos
 
 ## 1. Contextualização e Objetivo
 
@@ -13,6 +17,7 @@ O presente trabalho consiste na refatoração de um sistema de gestão de notas 
 
 A aplicação foi dividida em duas classes com responsabilidades bem definidas: uma para representar os dados e regras de negócio de cada avaliação (`AvaliacaoDisciplina`) e outra para gerir o fluxo de execução e armazenamento em memória (`SistemaAcademico`).
 
+```text
 +---------------------------------------------------+
 |                SistemaAcademico                   |
 +---------------------------------------------------+
@@ -43,6 +48,7 @@ A aplicação foi dividida em duas classes com responsabilidades bem definidas: 
 | + exibir_resumo(): void                           |
 +---------------------------------------------------+
 
+```
 
 *(Legenda: `+` indica membros públicos; `-` indica membros privados/protegidos).*
 
@@ -64,9 +70,9 @@ A aplicação foi dividida em duas classes com responsabilidades bem definidas: 
 
 ## 4. Comparativo Estrutural
 
-| Critério                  |Abordagem Anterior (Procedural/Funcional)                                     | Abordagem Atual (Orientada a Objetos) |
-| ---                       | ---                                                                          | --- |
-| **Estrutura de Dados**    | Tuplas genéricas armazenadas numa lista local dentro da função `main()`.     | Instâncias tipadas da classe `AvaliacaoDisciplina` geridas por `SistemaAcademico`. |
-| **Acoplamento**           | Funções dependentes da passagem manual de parâmetros a cada chamada.         | Métodos coesos que acedem diretamente aos atributos da própria instância (`self`). |
-| **Integridade dos Dados** | Estado exposto no escopo de execução principal.                              | Estado protegido por modificadores de acesso privado e propriedades de leitura. |
-| **Manutenção**            | Alterações no formato de saída exigiam edição em múltiplos pontos do código. | Alterações no formato de exibição são feitas num único local (`exibir_resumo`). |
+| Critério | Abordagem Anterior (Procedural/Funcional) | Abordagem Atual (Orientada a Objetos) |
+| --- | --- | --- |
+| **Estrutura de Dados** | Tuplas genéricas armazenadas numa lista local dentro da função `main()`. | Instâncias tipadas da classe `AvaliacaoDisciplina` geridas por `SistemaAcademico`. |
+| **Acoplamento** | Funções dependentes da passagem manual de parâmetros a cada chamada. | Métodos coesos que acedem diretamente aos atributos da própria instância (`self`). |
+| **Integridade dos Dados** | Estado exposto no escopo de execução principal. | Estado protegido por modificadores de acesso privado e propriedades de leitura. |
+| **Manutenção** | Alterações no formato de saída exigiam edição em múltiplos pontos do código. | Alterações no formato de exibição são feitas num único local (`exibir_resumo`). |
