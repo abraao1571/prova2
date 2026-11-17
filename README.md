@@ -1,4 +1,5 @@
 Alunos: Abraão Silva e Liah Renata Colins da Silva
+
 Os dois paradigmas têm formas diferentes de pensar e organizar um programa.
 
 ---
